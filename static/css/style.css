@@ -1,0 +1,239 @@
+/*ESTILO GERAL*/
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+body{
+    background-color: black;
+    block-size: 100vh
+}
+
+.interface{
+    max-inline-size: 1280px;
+    margin: 0 auto;
+
+}
+
+.botao-contato button{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #0f8745;
+    border:0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+h2.titulo {
+    color: white;
+    font-size: 38px;
+    text-align: center;
+}
+
+h2.titulo span{
+    color: #0f8745;
+}
+button:hover{
+    box-shadow:0px 0px 8px #0f8745c0;
+    transform: scale(1.05);
+}
+
+.flex{
+    display: flex;
+}
+
+/* ESTILO DO CABEÇALHO */
+
+header{
+    padding: 40px 4%;
+}
+
+
+header > .interface{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    transition: .2s;
+    
+
+}
+
+header a{
+    color: #7d7d7d;
+    text-decoration: none;
+    display: inline-block;
+}
+
+header a:hover{
+    color: #fff;
+    transform: scale(1.05);
+}
+        
+
+header nav ul{
+    list-style-type: none;
+}
+
+header nav ul li{
+    display: inline-block;
+    padding: 0 40px;
+    font-size: 20px;
+}
+
+
+
+
+
+/* ESTILO DO TOPO DO SITE */
+
+section.topo-site{
+    padding: 40px 4%;
+}
+
+section.topo-site.flex{
+    align-items: center;
+    justify-content: center;
+    gap: 700px;
+}
+
+.topo-site .txt-topo-site h1{
+    color: white;
+    font-size: 42px;
+}
+
+.topo-site .txt-topo-site h1 span{
+    color:#0f8745c0;
+}
+
+.topo-site .txt-topo-site p{
+    color: #7d7d7d;
+    margin: 40px 0px;
+    font-size: 25px;
+}
+
+.topo-site .img-topo-site img {
+    margin: 4% 40px;
+}
+
+.topo-site .img-topo-site img{
+    border-radius: 150px;
+}
+
+
+.topo-site .img-topo-site img{
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite  alternate;
+
+}
+
+
+
+
+@keyframes flutuar{
+    0%{
+        inset-block-start:0;
+    }
+    100%{
+        inset-block-start: 30px;
+    }
+}
+
+
+/* ESTILO DAS ESPECIALIDADES */
+
+section .especialidades{
+    padding: 40px 4%;
+}
+
+section.especialidades .flex{
+    gap: 60px;
+}
+
+
+.especialidades .especialidades-box{
+    color: white;
+    padding: 40px;
+    border: 2px solid rgba(255, 255, 255, 0.336) ;
+    margin: 50px;
+    border-radius: 20px;
+    transition: .2s;
+}
+
+.especialidades .especialidades-box:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.308);
+
+}
+
+.especialidades .especialidades-box i{
+    font-size: 70px;
+    color: #0f8745;
+}
+
+.especialidades .especialidades-box h3{
+    font-size:28px ;
+    margin: 15px 0;
+}
+
+/* ESTILO SOBRE MIM */
+
+section.sobre{
+    padding: 80px 4%;
+}
+
+section.sobre .flex{
+    align-items: center;
+    gap: 60px;
+}
+
+.sobre .txt-sobre{
+    color: white;
+    
+}
+
+.sobre .txt-sobre h2{
+    font-size: 40px;
+   line-height: 40px;
+    margin-bottom: 30px;
+}
+
+.sobre .txt-sobre h2 span{
+    color: #0f8745;
+    display: block;
+
+}
+
+.sobre .txt-sobre p{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    margin: 20px 0;
+    text-align: justify;
+}
+
+.sobre .txt-sobre .btn-social button{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    background-color: #0f8745;
+    font-size: 22px;
+    cursor: pointer;
+    margin: 0 10px;
+
+}
+
+
+
+.sobre .img-sobre img{
+    border-radius: 50px;
+    width: 400px;
+    height: 400px;
+    transition: .2s;
+}
+
+
+
