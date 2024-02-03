@@ -353,6 +353,13 @@ form input, form textarea::placeholder{
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.formulario p{
+    padding: 60px 4%;
+    color: white;
+    text-align: center;
+    font-size: 38px;
+}
+
 
 
 
