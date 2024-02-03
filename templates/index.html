@@ -17,8 +17,8 @@
 <body>
 
     <header>
-        <div class="interface">
-            <div class="logo">
+        <div class="interface"><!--interface-->
+            <div class="logo" id="Inicio">
                 <a href="#">
                     <img src="static/img/logo.png" width="100" height="100">
                 </a>
@@ -27,10 +27,10 @@
 
         <nav>
             <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Especialidades</a></li>
-                <li><a href="#">Sobre Mim</a></li>
-                <li><a href="#">Projetos</a></li>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#especialidades">Especialidades</a></li>
+                <li><a href="#sobre">Sobre Mim</a></li>
+                <li><a href="#portifolio">Projetos</a></li>
             </ul>
         </nav>
 
@@ -44,7 +44,7 @@
     </header>
     se
     <main>
-        <section class="topo-site">
+        <section class="topo-site" id="topo-site"><!--topo-site-->
             
             <div class="interface"><!--interface-->
                 <div class="flex"><!--flex-->
@@ -73,7 +73,7 @@
             </div><!--interface-->
         </section><!--topo-site-->
         
-        <section class="especialidades">
+        <section class="especialidades" id="especialidades"><!--especialidades-->
             <div class="interface">
                 <h2 class="titulo">MINHAS <span>ESPECIALIDADES.</span></h2>
                 <div class="flex">
@@ -107,9 +107,9 @@
 
                 </div><!--flex-->
             </div> <!--interface-->
-        </section>
+        </section><!--especialidades-->
 
-        <section class="sobre">
+        <section class="sobre" id="sobre"><!--sobre-->
             <div class="interface">
                 <div class="flex">
                     <div class="img-sobre">
@@ -130,8 +130,49 @@
                 </div>
             </div><!--interface-->
 
-        </section>
+        </section><!--sobre-->
+        <section class="portifolio" id="portifolio"><!--portifolio-->
+            <div class="interface">
+                <h2 class="titulo">MEU <span>PORTIFOLIO.</span></h2>
+               
+                <div class="flex">
+                    
+                    <div class="img-port" style="background-image: url(static/img/portifolio1.png);">
+                        <div class="overlay"></div>
+                    </div>
+                    <div class="img-port" style="background-image: url(static/img/portifolio2.png);">
+                        <div class="overlay"></div>
+                    </div>
+                    <div class="img-port" style="background-image: url(static/img/portifolio3.png);">
+                        <div class="overlay"></div>
+                    </div>
+                </div><!--flex--> 
+                <div class="titulo-projeto">
+                  <h2>PROJETO <span>1</span></h2>
+                  <h2>PROJETO <span>2</span></h2>
+                  <h2>PROJETO <span>3</span></h2>
+                  
+                </div>           
+
+            </div><!--interface-->
         
+        </section><!--portifolio-->
+        <section class="formulario">
+            <div class="interface">
+                <h2 class="titulo">FALE <span>COMIGO</span></h2>
+
+                <form action="">
+                    <input type="text" name="" id="" placeholder="Seu nome completo:" required>
+                    <input type="text" name="" id="" placeholder="Seu e-mail:" required>
+                    <input type="number" name="" id="" placeholder="Seu celular:" required>
+                    <textarea name="" id="" placeholder="Sua mensagem:" required></textarea>
+
+                    <div class="btn-enviar"><input type="submit" value="ENVIAR"></div>
+
+                </form>
+            </div>
+
+        </section>
     </main>
 </body>
 </html>
