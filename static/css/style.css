@@ -17,6 +17,11 @@ body{
 
 }
 
+.logo img{
+    width: 100px;
+    height: 100px;
+}
+
 .botao-contato button{
     padding: 10px 40px;
     font-size: 18px;
@@ -26,6 +31,18 @@ body{
     border-radius: 30px;
     cursor: pointer;
     transition: .2s;
+}
+
+.btn-social button{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    background-color: #0f8745;
+    font-size: 22px;
+    cursor: pointer;
+    margin: 0 10px;
+
 }
 
 h2.titulo {
@@ -62,8 +79,11 @@ header > .interface{
 
 }
 
+
+
 header a{
     color: #7d7d7d;
+    font-size: 20px;
     text-decoration: none;
     display: inline-block;
 }
@@ -81,11 +101,7 @@ header nav ul{
 header nav ul li{
     display: inline-block;
     padding: 0 40px;
-    font-size: 20px;
 }
-
-
-
 
 
 /* ESTILO DO TOPO DO SITE */
@@ -214,20 +230,6 @@ section.sobre .flex{
     text-align: justify;
 }
 
-.sobre .txt-sobre .btn-social button{
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    border: none;
-    background-color: #0f8745;
-    font-size: 22px;
-    cursor: pointer;
-    margin: 0 10px;
-
-}
-
-
-
 .sobre .img-sobre img{
     border-radius: 50px;
     width: 400px;
@@ -247,6 +249,22 @@ section.portifolio .flex{
     margin-top: 60px;
 }
 
+.portifolio h2{
+    color: #fff;
+}
+
+.titulo-portifolio{
+    position: relative;
+    top: 475px;
+    right: 185px;
+    font-size: 30px;
+    display: flex;
+    gap: 10px;
+}
+
+.titulo-portifolio span{
+    color: #0f8745;
+}
 
 
 .img-port{
@@ -278,6 +296,11 @@ section.portifolio .flex{
 
 .overlay:hover{
     opacity: 1;
+}
+section.portifolio .img-port{
+    display:flex;
+    
+    
 }
 
 .titulo-projeto {
@@ -321,6 +344,7 @@ form input, form textarea{
     padding: 20px 15px;
     border-radius: 15px;
     color: white;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
     
 }
@@ -353,13 +377,126 @@ form input, form textarea::placeholder{
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.formulario p{
-    padding: 60px 4%;
-    color: white;
-    text-align: center;
-    font-size: 38px;
+/* ESTILO DO RODAPÉ */
+
+footer{
+    padding: 15px 4%;
+    box-shadow: 0 0 40px 10px rgba(255, 255, 255, 0.13) ;
 }
 
+footer .flex{
+    justify-content: space-between;
+}
+
+.line-footer .flex{
+    align-items: center;
+}
+
+footer .line-footer{
+    padding: 20px 0;
+}
+
+.borda{
+    border-top: 2px solid #0f8745;
+}
+
+.line-footer p i{
+    color: white;
+    font-size: 22px;
+}
+
+.line-footer p a{
+    margin-left: 4px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+/*ESTILO MOBILE*/
+
+@media screen and (max-width: 1020px){
+    /* CLASSES GERAIS */
+    .flex{
+        flex-direction: column;
+    }
+    
+    /* CABEÇALHO */
+
+    header{
+        padding:0  auto;
+
+    }
+
+    .menu-desktop, .botao-contato{
+        display: none;
+    }
+
+    /*TOPO-SITE*/
+
+    section.topo-site{
+        padding: 0;
+    }
+
+    .img-topo-site {
+       display: flex;
+       justify-content: center;
+        
+        
+    }
+
+
+    .topo-site h1{
+        padding: 50px 20px;
+    }
+    
+
+    .topo-site .flex{
+        flex-direction: column-reverse;
+    }
+
+    .topo-site .txt-topo-site p{
+        margin: 0px 20px;
+        padding-bottom: 50px;
+        font-size: 25px;
+    }
+
+    /* ESTILO SOBRE */
+    .sobre .img-sobre img{
+        width: 350px;
+        height: 350px;
+        
+    }
+
+    .txt-sobre h2{
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+    .sobre .txt-sobre p{
+        margin: 0 15px 40px;
+    }
+
+    .btn-social {
+        text-align: center;
+    
+    }
+
+    /* ESTILO DO PORTIFOLIO */
+    .portifolio .titulo-portifolio{
+        position: static;
+        font-size: 38px;
+        justify-content: center;
+
+    }
+
+    .img-port{
+        width: 100%;
+        max-width: 360px;
+        margin: auto;
+    }    
+
+
+}
 
 
 

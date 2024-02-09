@@ -1,32 +1,17 @@
-from flask import Flask, redirect, render_template, url_for, request
+from flask import Flask, redirect, render_template
 
 
 
 app = Flask(__name__)
 
-@app.route('/home')
+@app.route('/')
 def index():
 		# Precisamos da função redirect para navegar para o endpoint "/home"
-    return redirect('/') 
+    return redirect('/home') 
 
-@app.route('/', methods=['GET'])
+@app.route('/home', )
 def home():
     return render_template('index.html')
-
-
-@app.route('/contato', methods=['POST'])
-def menssagem_contato():
-    remetente = request.form.get('remetente')
-    assunto =  request.form.get('assunto')
-    resposta = f'Obrigado {remetente} por entrar em contato'
-    return render_template('index.html', mensagem=resposta)
-
-
-    
-
-
-
-    
 
 
 if __name__ == '__main__':
